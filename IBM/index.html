@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aqua Health Alliance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="img/logo.png" alt="Sanitation and Water for All Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Impact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="#" class="button" onclick="openPopup('register-popup')">Become a Partner</a>
+                <a href="#" class="contact" onclick="openPopup('contact-popup')">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Registration Popup -->
+    <div id="register-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('register-popup')">&times;</span>
+            <div class="form-container">
+                <h2>Register</h2>
+                <form id="register-form">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password"required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot-container">
+                        <label>
+                            <input type="checkbox" id="remember-me">
+                            I agree to the terms & conditions
+                        </label>
+                    </div>
+                    <button type="submit">Register</button>
+                </form>
+                <div class="register-link">
+                    Already have an account? <a href="#" class="open-login-popup" onclick="openPopup('login-popup')">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Popup -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('login-popup')">&times;</span>
+            <div class="form-container">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot-container">
+                        <label>
+                            <input type="checkbox" id="remember-me">
+                            Remember me
+                        </label>
+                        <a href="#" id="forgot-password">Forgot Password?</a>
+                    </div>
+                    <button type="submit">Login</button>
+                </form>
+                <div class="register-link">
+                    Not have an account? <a href="#" class="open-popup" onclick="openPopup('register-popup')">Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Popup -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('contact-popup')">&times;</span>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Name</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <input type="text"required>
+                        <label>Subject</label>
+                    </div>
+                    <div class="input-box"><label>Message</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit">Send Us</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Building a Brighter Future<br>with Clean Water<br>and Sanitation</h1>
+            </div>
+        </section>
+    </main>
+
+    <div class="features">
+        <div class="row">
+            <div class="text-col">
+                <h2 class="sub-head">Transforming a Village: Clean Water for All</h2>
+                <p>In a remote village with a population of 500, access to clean water was a daily struggle. Villagers relied on a distant, contaminated river, leading to frequent illnesses and significant time spent fetching water. Through a partnership with AquaHealthAlliance, a deep well and solar-powered filtration system were installed. This project dramatically reduced waterborne diseases by 80%, improved hygiene, and allowed women and children to pursue education and economic activities. The newfound access to clean water empowered the community, boosted productivity, and enhanced overall quality of life.</p>
+            </div>
+            <div class="img-col">
+                <img src="img/village.png" class="left">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="img/wash.png" class="right">
+            </div>
+            <div class="text-col">
+                <h2 class="sub-head">Health and Hygiene: A Community Transformation</h2>
+                <p>In a small community plagued by frequent outbreaks of waterborne diseases, the introduction of clean water and comprehensive hygiene education has brought about a remarkable transformation. The community's health has significantly improved, with a notable reduction in illnesses. Access to clean water has enabled better hygiene practices, including regular handwashing and proper sanitation, which were previously unattainable. These changes have led to fewer school absences among children and increased productivity among adults, who are now healthier and more energetic. Moreover, the community has embraced new hygiene habits, fostering a cleaner and safer environment for everyone. This transformation highlights the critical role of clean water and hygiene education in improving public health and quality of life.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-col">
+                <h2 class="sub-head">School Sanitation Programs: Building a Better Future</h2>
+                <p>Access to clean water and proper sanitation facilities in schools is essential for fostering a healthy learning environment. In many regions, schools struggle with inadequate sanitation, leading to poor student health and high absenteeism.</p>
+
+                <p>In a recent initiative byAquaHealthAlliance, severalschools have been equipped withclean water sources and modernsanitation facilities. This hasled to a significant decrease inwaterborne illnesses amongstudents and has improvedattendance rates. Girls, inparticular, benefit from theseprograms as they no longer missschool during menstruation dueto lack of facilities.</p>
+            </div>
+            <div class="img-col">
+                <img src="img/school.png" class="left">
+            </div>
+        </div>
+        <div class="row">
+            <div class="img-col">
+                <img src="img/tower.png" class="right">
+            </div>
+            <div class="text-col">
+                <h2 class="sub-head">Empowering Women through Access to Water</h2>
+                <p>Access to clean water has revolutionized the lives of women in the rural village of Madhya Pradesh. Previously, women and girls spent hours each day walking long distances to fetch water, often from unsafe sources. With the installation of a nearby well and water filtration system, they now have easy access to clean water, dramatically improving their quality of life.</p>
+
+                <p>Health outcomes have improved, with a significant reduction in waterborne diseases, leading to fewer sick days and higherproductivity. Women have more time to engage in income-generating activities, such as farming and small businesses, boostingtheir economic independence. Girls are now able to attend school regularly, enhancing their educational opportunities andfuture prospects.    
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <img src="img/logo 1.png" alt="AquaHealthAlliance">
+        </div>
+        <div class="links">
+            <h3>LINKS</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Work</a></li>
+                <li><a href="#">Our Partners</a></li>
+            </ul>
+        </div>
+        <div class="quicklinks">
+            <h3>QUICKLINKS</h3>
+            <ul>
+                <li><a href="#">High Level Meetings</a></li>
+                <li><a href="#">SWA Framework</a></li>
+                <li><a href="#">Tools Portal</a></li>
+            </ul>
+        </div>
+        <div class="follow-us">
+            <h3>FOLLOW US</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/"><i class='bx bxl-facebook'></i></a>
+                <a href="https://x.com/"><i class='bx bxl-twitter'></i></a>
+                <a href="https://linkedin.com/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
